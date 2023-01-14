@@ -1,0 +1,72 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+   {% block content %}
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="fade-up">
+          <div>
+            <h1>Intruder Alert System</h1>
+            <h2>
+            A password based Intruder alert system built in Python.
+            </h2>
+            <a href="{% url 'login' %}" class="btn-get-started scrollto">
+             Login
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left">
+          <img src="{% static 'assets/img/access.jpg' %}" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+   
+  
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Developed bY</h2>
+          <!--p>A highly energetic, creative, and passionate Product UI/UX Designer and Developer with proficiency in visual UI design, UX design, and user-centered design principles.</p-->
+        </div>
+
+        <div class="row">
+       
+          <div class="col-lg-4 col-md-6">
+            <div class="member" data-aos="zoom-in">
+              <div class="pic"><img src="{% static 'assets/img/arinze.jpeg' %}" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Kebe</h4>
+                <span>Computer science Dept. FUTO</span>
+               
+              </div>
+            </div>
+          </div>
+       
+   
+         
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    
+
+  </main><!-- End #main -->
+   
+  {% endblock %}
+
